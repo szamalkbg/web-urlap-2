@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="urlap, CV">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Fabu András, Boldizsár Gergely">
+    <title>Önéletrajz Alap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <main>
+        <div class="container p-5 my-5 border rounded-5 text-dark custom-border">
+            <div class="alapadatok">
+                <form action="#" method="get" id="form">
+                    <h2>Alapadatok:</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="fnev">Vezetéknév:</label>
+                                <input type="text" id="fnev" name="fnev" class="form-control" placeholder="Kovács">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="jelszo">Keresztnév:</label>
+                                <input type="text" id="jelszo" name="jelszo" class="form-control" placeholder="Lajos">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">E-mail cím:</label>
+                                <input type="text" id="email" name="email" class="form-control" placeholder="vmi@vmi.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="profileImage">Profil kép:</label>
+                                <input type="file" id="profileImage" name="profileImage" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="szuletesiHely">Születési hely:</label>
+                                <input type="text" id="szuletesiHely" name="szuletesiHely" class="form-control" placeholder="Pécs">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="szuletesiDatum">Születési dátum:</label>
+                                <input type="date" id="szuletesiDatum" name="szuletesiDatum" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="telefon">Telefonszám:</label>
+                                <input type="text" id="telefon" name="telefon" class="form-control" placeholder="+36701234567">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lakohely">Lakóhely:</label>
+                                <input type="text" id="lakohely" name="lakohely" class="form-control" placeholder="2112, Veresegyház, Retek utca 5.">
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Tanulmányok:</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="tanulmanyKezdete">Tanulmány kezdete:</label>
+                                <input type="date" id="tanulmanyKezdete" name="tanulmanyKezdete" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="tanulmanyVege">Tanulmány vége:</label>
+                                <input type="date" id="tanulmanyVege" name="tanulmanyVege" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="intezmenyNeve">Intézmény neve:</label>
+                                <input type="text" id="intezmenyNeve" name="intezmenyNeve" class="form-control" placeholder="SZAMALK">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="vegzettseg">Végzettség:</label>
+                                <input type="text" id="vegzettseg" name="vegzettseg" class="form-control" placeholder="Orvosi végzettség">
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Munkatapasztalat:</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="munkaVegzesKezdete">Munkavégzés kezdete:</label>
+                                <input type="date" id="munkaVegzesKezdete" name="munkaVegzesKezdete" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="munkaVegzesVege">Munkavégzés vége:</label>
+                                <input type="date" id="munkaVegzesVege" name="munkaVegzesVege" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="munkahelyNeve">Munkahely neve:</label>
+                                <input type="text" id="munkahelyNeve" name="munkahelyNeve" class="form-control" placeholder="Mondi Kft.">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="pozicio">Pozició:</label>
+                                <input type="text" id="pozicio" name="pozicio" class="form-control" placeholder="Szoftverfejlesztő">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="munkakorLeiras">Munkakör leírása:</label>
+                                <input type="text" id="munkakorLeiras" name="munkakorLeiras" class="form-control" placeholder="Szoftverfejlesztés és tesztelés">
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Nyelvismeret:</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nyelvismeret">Nyelvismeret:</label>
+                                <select multiple class="form-select" id="nyelvismeret" name="nyelvismeret">
+                                    <option value="angol">Angol</option>
+                                    <option value="német">Német</option>
+                                    <option value="spanyol">Spanyol</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="angolSzint">Angol nyelvi szint:</label>
+                                <select class="form-select" id="angolSzint" name="angolSzint">
+                                    <option value="alap">Alap szint</option>
+                                    <option value="halado">Haladó szint</option>
+                                    <option value="targyalko">Tárgyalóképes szint</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Magamról:</h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="magamrol">Magamról:</label>
+                                <textarea class="form-control" id="magamrol" name="magamrol" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-3">
+                            <button type="submit" form="form" id="gomb" class="btn btn-primary px-4">Regisztráció</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
